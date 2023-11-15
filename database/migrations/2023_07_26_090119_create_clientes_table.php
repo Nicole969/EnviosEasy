@@ -32,7 +32,7 @@ return new class extends Migration
 
             $table->unsignedBigInteger('otro_id')->nullable();
             $table->foreign('otro_id')->references('id')->on('otros')->onDelete('set null');
-            
+            $table->integer('opcionalN')->nullable();
             $table->timestamps();
         });
     }

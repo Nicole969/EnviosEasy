@@ -25,6 +25,7 @@ return new class extends Migration
             $table->integer('cadU')->nullable();
             $table->integer('opcional')->nullable();
             $table->integer('cliente')->nullable();
+            $table->integer('opcionalN')->nullable();
             $table->timestamps();
         });
     }

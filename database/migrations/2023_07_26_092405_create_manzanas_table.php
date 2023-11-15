@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('abreviatura')->nullable();
             $table->enum('estado',['0', '1'])->default('1');
             $table->string('otro')->nullable();
-
+            $table->integer('opcionalN')->nullable();
             $table->unsignedBigInteger('sector_id')->nullable();
             $table->foreign('sector_id')->references('id')->on('sectors')->onDelete('set null');
             
